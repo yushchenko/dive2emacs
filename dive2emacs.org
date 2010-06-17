@@ -1,25 +1,40 @@
 * Introduction
-I started to use Emacs about a month ago instead of MS Visual Studia 2010 and couple of other text editors.
-In this file I would like to describe various problems I encountered and its solutions.
-It looks like that Emacs Org mode is quite convinient to keep notes of such kind.
-So let start
+  I started to use Emacs about a month ago instead of MS Visual Studia 2010 and couple of other text editors.
+  In this file I would like to describe various problems I encountered and its solutions.
+  It looks like that Emacs Org mode is quite convinient to keep notes of such kind.
+  So let start.
+
+
+* To Do
+
+** Master Emacs Org mode
+   Probably I would like to use it to organize my to-do lists.
+   I love the idea that its just simple text.
 
 
 * Problems
 
 ** spell check
-I need spell check my writings including this file and also comments in my code.
-Is integration with After the Deadline possible?
+   I need spell check my writings including this file and also comments in my code.
+   Is integration with After the Deadline possible?
 
 ** .Net code editing
-Inspite of working mainly with JavaScript I sometimes edit C# and aspx,
-so it would be great to get at least code coloring for them.
+   Inspite of working mainly with JavaScript I sometimes edit C# and aspx,
+   so it would be great to get at least code coloring for them.
 
 ** TFS integration
-Microsoft Team Foundation server (TFS) has terrible version control system desendant of VSS.
-Required a way to do simple operation like file check out from Emacs
+   Microsoft Team Foundation server (TFS) has terrible version control system desendant of VSS.
+   Required a way to do simple operation like file check out from Emacs
+   
+** Unix shell inside Emacs on Windows
+   Something like git's shell (MinGW bash?)
+
+
+* Solutions
 
 ** Highlight current line in Dired
-
-
-* Solution
+   I need line highligthing only in Dired and it should follow my dark twilight Emacs theme.
+   So hl-line-face should be customized and the hook added on Dired start up:
+   
+   (setq hl-line-face '((t (:background "#27292A"))))
+   (add-hook 'dired-mode-hook (lambda () (hl-line-mode 1)))
