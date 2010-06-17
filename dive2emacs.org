@@ -4,12 +4,6 @@ In this file I would like to describe various problems I encountered and its sol
 It looks like that Emacs Org mode is quite convinient to keep notes of such kind.
 So let start
 
--  cs mode
--  tfs integration
--  spell check
--  
--  add line highlight in dired
-
 
 * Problems
 
