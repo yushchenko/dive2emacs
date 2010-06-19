@@ -29,6 +29,10 @@
 ** Unix shell inside Emacs on Windows
    Something like git's shell (MinGW bash?)
 
+** mk-project
+   I've found very interesting tool for Emacs called [[http://github.com/mattkeller/mk-project][mk-project]].
+   Unfortunatelly current version (1.4) doesn't work on my computer.
+
 
 * Solutions
 
