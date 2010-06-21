@@ -1,18 +1,18 @@
 * Introduction
-  I started to use Emacs about a month ago instead of MS Visual Studia 2010 and couple of other text editors.
+  I started to use Emacs about a month ago instead of MS Visual Studio 2010 and couple of other text editors.
   In this file I would like to describe various problems I encountered and its solutions.
   It looks like that Emacs Org mode is quite convinient to keep notes of such kind.
   So let start.
 
 
-* To Do
+* To Study
 
 ** Master Emacs Org mode
    Probably I would like to use it to organize my to-do lists.
    I love the idea that its just simple text.
 
 
-* Problems
+* ToDo's
 
 ** spell check
    I need spell check my writings including this file and also comments in my code.
@@ -27,14 +27,22 @@
    Required a way to do simple operation like file check out from Emacs
    
 ** Unix shell inside Emacs on Windows
-   Something like git's shell (MinGW bash?)
+   Something like git's shell (MinGW or Cygwin bash).
 
-** mk-project
-   I've found very interesting tool for Emacs called [[http://github.com/mattkeller/mk-project][mk-project]].
-   Unfortunatelly current version (1.4) doesn't work on my computer.
+** Configuration refactoring
+   My .emacs file is growing and it would be better to split it into several separate files.
+   For example: emacs.el, basic.el, programming.el, projects.el etc
+   It also should contain configuration for several hosts.
+
+** Git repository for Emacs configuration
+   Use Git repository on github to keep my config's history and sync it between hosts.
+
+** Additional software list
+   Create list of additional software like git, cygwing etc that should be installed 
+   to create Unix like environment on Win host for Emacs.
 
 
-* Solutions
+* Notes & Solved Problems
 
 ** Highlight current line in Dired
    I need line highligthing only in Dired and it should follow my dark twilight Emacs theme.
@@ -42,3 +50,12 @@
    
    (setq hl-line-face '((t (:background "#27292A"))))
    (add-hook 'dired-mode-hook (lambda () (hl-line-mode 1)))
+
+** mk-project
+   I've found very interesting tool for Emacs called [[http://github.com/mattkeller/mk-project][mk-project]].
+   It's required Unix commands such as find and I copied the part of Matt Keller's config
+   for Windows to solve the problem. It adds cygwin/bin to PATH and make Cygwin a default shell for Emacs.
+   Now it's just temporary solution but I'am going to consider Cygwin env as my main shell on Windows.
+
+
+   
