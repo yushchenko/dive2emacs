@@ -1,8 +1,11 @@
 * Introduction
-  I started to use Emacs about a month ago instead of MS Visual Studio 2010 and couple of other text editors.
-  In this file I would like to describe various problems I encountered and its solutions.
-  It looks like that Emacs Org mode is quite convinient to keep notes of such kind.
-  So let start.
+  For many years I have been using various editors/IDEs on Windows such as M$ Visual Studio.
+  I can't say that they are terrible, in fact, many people like such kind of software 
+  but, on the other hand, it would be very interesting to try out something complitely different.
+  So in May 2010 I started to use GNU Emacs for development and writing.
+
+  In this file I will describe various problems I encountered and its solutions.
+  It looks like that Emacs Org mode is quite convenient to keep notes of such kind.
 
 
 * To Study
@@ -12,15 +15,13 @@
    I love the idea that its just simple text.
 
 
-* ToDo's
+* In Progress
 
 ** spell check
    I need spell check my writings including this file and also comments in my code.
    Is integration with After the Deadline possible?
 
-** .Net code editing
-   Inspite of working mainly with JavaScript I sometimes edit C# and aspx,
-   so it would be great to get at least code coloring for them.
+   Trying flyspell-mode which works with Cygwin aspell program.
 
 ** TFS integration
    Microsoft Team Foundation server (TFS) has terrible version control system desendant of VSS.
@@ -28,6 +29,8 @@
    
 ** Unix shell inside Emacs on Windows
    Something like git's shell (MinGW or Cygwin bash).
+
+   Trying to use Cygwin bash...
 
 ** Configuration refactoring
    My .emacs file is growing and it would be better to split it into several separate files.
@@ -40,9 +43,15 @@
 ** Additional software list
    Create list of additional software like git, cygwing etc that should be installed 
    to create Unix like environment on Win host for Emacs.
+   
+** iBuffer
+   Set up iBuffer instead of old buffer list
 
+** Tags (etags or ctags)
+   Need support for JavaScript, Html, Css, C#
+   
 
-* Notes & Solved Problems
+* Notes
 
 ** Highlight current line in Dired
    I need line highligthing only in Dired and it should follow my dark twilight Emacs theme.
@@ -53,9 +62,25 @@
 
 ** mk-project
    I've found very interesting tool for Emacs called [[http://github.com/mattkeller/mk-project][mk-project]].
+
    It's required Unix commands such as find and I copied the part of Matt Keller's config
    for Windows to solve the problem. It adds cygwin/bin to PATH and make Cygwin a default shell for Emacs.
    Now it's just temporary solution but I'am going to consider Cygwin env as my main shell on Windows.
 
+   Configured using index-find-cmd and grep-find-cmd because I needed to exclude not only version controls
+   directory but also bin, obj, log etc.
+   
+   I'am going to try out ack for search (requires Perl, hope it will work under Cygwin).
 
+** .Net code editing
+   Inspite of working mainly with JavaScript I sometimes edit C# and aspx,
+   so it would be great to get at least code coloring for them.
+
+   Added csharp-mode.el, it provides syntax coloring for C# code.
+   Tried aspx-mode.el but it looks like that it doesn't work proprely in my case for unknown reason.
+   The mode also contains several extra dependencies (espresso.el, multy-mode.el).
+   
+
+
+   
    
