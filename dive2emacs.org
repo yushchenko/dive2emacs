@@ -80,7 +80,21 @@
    Tried aspx-mode.el but it looks like that it doesn't work proprely in my case for unknown reason.
    The mode also contains several extra dependencies (espresso.el, multy-mode.el).
    
+** Control and Meta under thumbs mapping
+   Emacs default binding were designed for keyboards that have another key's positions than modern ones.
+   For example, The Space-cadet keyboard has Contorls keys at the both sides of Space key, so it's convinient
+   to press controls with thumbs. A modern keyboard has Controls under pinkies that leads to RSI due to heavy usage
+   of shortcuts with Ctrl key. For instance, I can't press many cursor moving commands without shifting my hands
+   from default typing possition. And it's slow, not so much as pressing arrows but still slow.
 
+   Currently I'm trying the following on my Samsung N148 netbook:
+   Win - Fn - Alt - Control - Space - Control - Alt - ContextMenu.
+   I've used KeyTweak (on Windows XP) to remap the keys.
+   
+   Netbook's keyboard is small so it's convinient to press both Control and Alt with thumbs.
+   On a bigger keyboard Alt key will be under unnamed finger that looks nice because it's used not so often.
+   With such mapping pinkies are used only for pressing Shifts that are big and easily reachable.
+   
 
    
    
